@@ -1,0 +1,30 @@
+<!doctype html>
+
+<!-- This page "hosts" a simple demonstration of "Nanoshop,"
+     a tiny image processing module (emphasis on tiny). -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nanoshop Demo</title>
+    </head>
+    <body>
+        <!-- Where the action will happen. -->
+        <canvas id="picture" width="1000" height="498">
+            All your <code>canvas</code> are belong to us!
+        </canvas>
+        <div>
+            <!-- A little UI to trigger the filter. -->
+            <button id="apply-inverse-filter-button">Apply Inverse Filter</button>
+        </div>
+         <div>
+            <!-- A little UI to trigger the filter. -->
+            <button id="apply-bw-filter-button">Apply Black & White Filter</button>
+        </div>
+
+        <!-- To at least make the above a little easier, we
+             at least recruit jQuery's services. -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="nanoshop.js"></script>
+        <script src="nanoshop-demo.js"></script>
+    </body>
+</html>
